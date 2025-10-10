@@ -30,7 +30,7 @@ function CardModel() {
   });
 
   return (
-    <primitive ref={ref} object={scene} scale={0.6} position={[0, -0.2, 0]} />
+    <primitive ref={ref} object={scene} scale={1} position={[0, -0.2, 0]} />
   );
 }
 
@@ -39,17 +39,19 @@ export default function ThreeCard() {
     <motion.div
       initial={{ opacity: 0, scale: 0.9 }}
       animate={{ opacity: 1, scale: 1 }}
-      transition={{ duration: 0.3, ease: "easeOut" }}
-      className="w-full sm:w-[90vw] md:w-[60vw] lg:w-[50vw] h-[60vh] sm:h-[70vh] md:h-[80vh] lg:h-screen mx-auto"
+      transition={{ duration: 0.5, ease: "easeOut" }}
+      className="relative flex items-center justify-center w-[75vw] h-screen mx-auto"
     >
-      <Canvas camera={{ position: [0, 0, 5], fov: 50 }} shadows>
+      <Canvas
+        camera={{ position: [0, 0, 10], fov: 70 }}
+        className="rounded-2xl shadow-lg"
+      >
         <ambientLight intensity={0.3} />
         <directionalLight position={[3, 5, 5]} intensity={1.2} castShadow />
         <pointLight position={[-3, -2, -3]} intensity={0.5} />
         <Environment preset="city" />
 
         <CardModel />
-
         <OrbitControls enableZoom={false} enablePan={false} />
       </Canvas>
     </motion.div>

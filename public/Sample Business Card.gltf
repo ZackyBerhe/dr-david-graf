@@ -17,9 +17,9 @@
 			"mesh":0,
 			"name":"Cube",
 			"scale":[
-				2.7036423683166504,
+				4.9300432205200195,
 				0.07680553197860718,
-				1.4902901649475098
+				4.962735176086426
 			]
 		}
 	],
@@ -60,9 +60,9 @@
 	],
 	"images":[
 		{
-			"mimeType":"image/jpeg",
-			"name":"Final Business Card Design",
-			"uri":"Textures/Final%20Business%20Card%20Design.jpg"
+			"mimeType":"image/png",
+			"name":"BlackBoard",
+			"uri":"Textures/BlackBoard.png"
 		}
 	],
 	"accessors":[
