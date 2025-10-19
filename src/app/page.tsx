@@ -23,7 +23,7 @@ export default function Home() {
         src="/Background.png"
         alt="Background Image"
         fill
-        className="object-contain"
+        className="object-fit"
         priority
       />
       <div className="absolute items-center justify-center h-28 w-28 -top-[42vh] left-20">

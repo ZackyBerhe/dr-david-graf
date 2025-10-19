@@ -61,8 +61,8 @@
 	"images":[
 		{
 			"mimeType":"image/png",
-			"name":"BlackBoard",
-			"uri":"Textures/BlackBoard.png"
+			"name":"BlackBoard (1)",
+			"uri":"Textures/BlackBoard%20%281%29.png"
 		}
 	],
 	"accessors":[
